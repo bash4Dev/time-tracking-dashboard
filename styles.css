@@ -1,5 +1,74 @@
+:root {
+    --blue: hsl(246, 80%, 60%);
+    --dark-blue: hsl(235, 46%, 20%);
+    --very-dark-blue: hsl(226, 43%, 10%);
+    --pale-blue: hsl(236, 100%, 87%);
+    --desaturated-blue: hsl(235, 45%, 61%);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    color: #ffff;
+    background-color: var(--very-dark-blue);
+}
+
+main#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 50%;
+    border: 1px solid #ffff;
+}
+
+div.user-box {
+    background-color: var(--dark-blue);
+}
+
+div.user-info {
+    background-color: var(--blue);
+}
+
+.user-info img {
+    width: 50px;
+    height: 50px;
+}
+.user-info p {
+    font-size: 15px;
+    opacity: 60%;
+}
+.user-info .user-title {
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+div.box {
+    border-radius: 10px;
+    background-color: var(--dark-blue);
+}
+div.box .image-bg {
+    background-color: #ffff;
+    display: flex;
+    justify-content: flex-end;
+}
+div.box .image-bg img {
+    width: 40px;
+    height: 40px;
+} 
+
+.attribution {
+    display: none;
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
