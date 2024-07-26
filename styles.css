@@ -1,10 +1,16 @@
 :root {
-    --blue: hsl(246, 80%, 60%);
-    --dark-blue: hsl(235, 46%, 20%);
-    --very-dark-blue: hsl(226, 43%, 10%);
-    --pale-blue: hsl(236, 100%, 87%);
-    --desaturated-blue: hsl(235, 45%, 61%);
-}
+    --blue: #5847eb;
+    --dark-blue: #1c1f4a;
+    --very-dark-blue: #0f1424;
+    --pale-blue: #bdc1ff;
+    --desaturated-blue: #6f76c8;
+    --lightred: #ff8c66;
+    --soft-blue: #56c2e6;
+    --light-red: #ff5c7c;
+    --lime-green: #4acf81;
+    --violet: #7536d3;
+    --sof-orange: #f1c65b;
+    }
 
 * {
     margin: 0;
@@ -24,12 +30,14 @@ body {
 main#container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "user-box work play study"
+    "user-box exercise social self-care";
     gap: 20px;
     width: 50%;
-    border: 1px solid #ffff;
 }
 
 div.user-box {
+    grid-area: user-box;
     background-color: var(--dark-blue);
 }
 
@@ -50,24 +58,89 @@ div.user-info {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+main .work.box {
+    grid-area: work;
+}
+main .play.box {
+    grid-area: play;
+}
+main .study.box {
+    grid-area: study;
+}
+main .exercise.box.box {
+    grid-area: exercise;
+}
+main .social.box {
+    grid-area: social;
+}
+main .self-care.box {
+    grid-area: self-care;
+}
 
 div.box {
     border-radius: 10px;
     background-color: var(--dark-blue);
 }
-div.box .image-bg {
-    background-color: #ffff;
+
+.work.box .box-img {
+    background-color: var(--lightred);
+}
+.play.box .box-img {
+    background-color: var(--soft-blue);
+}
+.study.box .box-img {
+    background-color: var(--light-red);
+}
+.exercise.box .box-img {
+    background-color: var(--lime-green);
+}
+.social.box .box-img {
+    background-color: var(--violet);
+}
+.self-care.box .box-img {
+    background-color: var(--sof-orange);
+}
+
+div.box .box-img {
     display: flex;
     justify-content: flex-end;
 }
-div.box .image-bg img {
+div.box .box-img img {
     width: 40px;
     height: 40px;
+}
+div.box .box-body {
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.box-body .box-hd {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+.box-hd .title {
+    font-weight: 600;
+    font-size: 18px;
 } 
+.box-hd img {
+    width: 18px;
+}
+
+.box-body .time.current {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.box-body .time.previous {
+    opacity: 60%;
+    font-size: 0.8rem;
+}
 
 .attribution {
     display: none;
-    font-size: 11px; text-align: center;
+    font-size: 11px;
+    text-align: center;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
