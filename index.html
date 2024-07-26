@@ -5,22 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Time tracking dashboard</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <main id="container">
     <div class="user-box">
       <div class="user-info">
-        <img src="" class="user-image" alt="">
+        <img src="./images/image-jeremy.png" alt="Jeremy Image">
         <p>Report for</p>
-        <h2 class="user-name">Jeremy Robson</h2>
+        <div class="user-title">Jeremy Robson</div>
       </div>
       <ul>
         <li>Daily</li>
@@ -30,95 +24,89 @@
     </div>
 
     <div class="work box">
+      <div class="image-bg">
+        <img src="./images/icon-work.svg" alt="Work img">
+      </div>
       <div>
-        <div><p>Work</p> <div class="svg"></div></div>
-        <div class="hours">
-          5hrs <!-- daily -->
-          Previous - 7hrs <!-- daily -->
-          32hrs <!-- weekly -->
-          Previous - 36hrs <!-- weekly -->
-          103hrs <!-- monthly -->
-          Previous - 128hrs <!-- monthly -->
+        <div>
+          <p class="title">Work</p>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
+        <div class="time current">32hrs</div>
+        <div class="time previous">Last week - 36hrs</div>
       </div>
     </div>
 
     <div class="play box">
+      <div class="image-bg">
+        <img src="./images/icon-play.svg" alt="play img">
+      </div>
       <div>
-        <div><p>Play</p> <div class="svg"></div></div>
-        <div class="hours">
-          Play
-          1hr <!-- daily -->
-          Previous - 2hrs <!-- daily -->
-          10hrs <!-- weekly -->
-          Previous - 8hrs <!-- weekly -->
-          23hrs <!-- monthly -->
-          Previous - 29hrs <!-- monthly -->
+        <div>
+          <p class="title">Play</p>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
+        <div class="time current">10hrs</div>
+        <div class="time previous">Last week - 8hrs</div>
       </div>
     </div>
 
     <div class="study box">
+      <div class="image-bg">
+        <img src="./images/icon-study.svg" alt="Study img">
+      </div>
       <div>
-        <div><p>Study</p> <div class="svg"></div></div>
-        <div class="hours">
-          Study
-          0hrs <!-- daily -->
-          Previous - 1hr <!-- daily -->
-          4hrs <!-- weekly -->
-          Previous - 7hrs <!-- weekly -->
-          13hrs <!-- monthly -->
-          Previous - 19hrs <!-- monthly -->
+        <div>
+          <p class="title">Study</p>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
+        <div class="time current">4hrs</div>
+        <div class="time previous">Last week - 7hrs</div>
       </div>
     </div>
 
-    <div class="exercise work">
+    <div class="exercise box">
+      <div class="image-bg">
+        <img src="./images/icon-exercise.svg" alt="Exercise img">
+      </div>
       <div>
-        <div><p>Exercise</p> <div class="svg"></div></div>
-        <div class="hours">
-          Exercise
-          1hr <!-- daily -->
-          Previous - 1hr <!-- daily -->
-          4hrs <!-- weekly -->
-          Previous - 5hrs <!-- weekly -->
-          11hrs <!-- monthly -->
-          Previous - 18hrs <!-- monthly -->
+        <div>
+          <p class="title">Exercise</p>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
+        <div class="time current">4hrs</div>
+        <div class="time previous">Last week - 5hrs</div>
       </div>
     </div>
 
     <div class="social box">
+      <div class="image-bg">
+        <img src="./images/icon-social.svg" alt="Social img">
+      </div>
       <div>
-        <div><p>Social</p> <div class="svg"></div></div>
-        <div class="hours">
-          Social
-          1hr <!-- daily -->
-          Previous - 3hrs <!-- daily -->
-          5hrs <!-- weekly -->
-          Previous - 10hrs <!-- weekly -->
-          21hrs <!-- monthly -->
-          Previous - 23hrs <!-- monthly -->
+        <div>
+          <p class="title">Social</p>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
+        <div class="time current">5hrs</div>
+        <div id="time previous">Last week - 10hrs</div>
       </div>
     </div>
 
     <div class="self-care box">
+      <div class="image-bg">
+        <img src="./images/icon-self-care.svg" alt="Self care img">
+      </div>
       <div>
-        <div><p>Self Care</p> <div class="svg"></div></div>
-        <div class="hours">
-          Self Care
-          0hrs <!-- daily -->
-          Previous - 1hr <!-- daily -->
-          2hrs <!-- weekly -->
-          Previous - 2hrs <!-- weekly -->
-          7hrs <!-- monthly -->
-          Previous - 11hrs <!-- monthly -->
+        <div>
+          <p class="title">Self Care</p>
+          <img src="./images/icon-ellipsis.svg" alt="ellipsis">
         </div>
+        <div class="time current">2hrs</div>
+        <div class="time previous">Last week - 2hrs</div>
       </div>
     </div>
   </main>
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
