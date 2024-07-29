@@ -10,7 +10,7 @@
     --lime-green: #4acf81;
     --violet: #7536d3;
     --sof-orange: #f1c65b;
-    }
+}
 
 * {
     margin: 0;
@@ -33,7 +33,7 @@ main#container {
     grid-template-areas: "user-box work play study"
     "user-box exercise social self-care";
     gap: 20px;
-    width: 50%;
+    width: 60%;
 }
 
 div.user-box {
@@ -43,19 +43,30 @@ div.user-box {
 
 div.user-info {
     background-color: var(--blue);
+    padding: 1.5rem;
 }
 
 .user-info img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
 }
-.user-info p {
+.user-info span {
     font-size: 15px;
     opacity: 60%;
 }
-.user-info .user-title {
+.user-info #user-title {
     font-size: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div#btns {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+}
+
+.btn {
+    cursor: default;
 }
 
 main .work.box {
@@ -128,11 +139,11 @@ div.box .box-body {
     width: 18px;
 }
 
-.box-body .time.current {
+.box-body .current-time {
     font-size: 2rem;
     font-weight: 600;
 }
-.box-body .time.previous {
+.box-body .previous-time {
     opacity: 60%;
     font-size: 0.8rem;
 }
