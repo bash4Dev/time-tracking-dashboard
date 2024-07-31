@@ -9,7 +9,7 @@
     --light-red: #ff5c7c;
     --lime-green: #4acf81;
     --violet: #7536d3;
-    --sof-orange: #f1c65b;
+    --soft-orange: #f1c65b;
 }
 
 * {
@@ -32,16 +32,19 @@ main#container {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: "user-box work play study"
     "user-box exercise social self-care";
-    gap: 20px;
-    width: 60%;
+    gap: 1rem;
+    width: 58%;
 }
 
 div.user-box {
     grid-area: user-box;
+    border-radius: 10px;
     background-color: var(--dark-blue);
 }
 
 div.user-info {
+    height: 74%;
+    border-radius: 10px;
     background-color: var(--blue);
     padding: 1.5rem;
 }
@@ -50,13 +53,16 @@ div.user-info {
     width: 60px;
     height: 60px;
 }
+#report {
+}
 .user-info span {
     font-size: 15px;
     opacity: 60%;
 }
 .user-info #user-title {
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 2rem;
 }
 
 div#btns {
@@ -66,6 +72,7 @@ div#btns {
 }
 
 .btn {
+    opacity: 70%;
     cursor: default;
 }
 
@@ -88,9 +95,8 @@ main .self-care.box {
     grid-area: self-care;
 }
 
-div.box {
-    border-radius: 10px;
-    background-color: var(--dark-blue);
+div.box .box-img {
+    border-radius: 10px 10px 0 0;
 }
 
 .work.box .box-img {
@@ -109,7 +115,7 @@ div.box {
     background-color: var(--violet);
 }
 .self-care.box .box-img {
-    background-color: var(--sof-orange);
+    background-color: var(--soft-orange);
 }
 
 div.box .box-img {
@@ -117,19 +123,21 @@ div.box .box-img {
     justify-content: flex-end;
 }
 div.box .box-img img {
-    width: 40px;
-    height: 40px;
+    width: 46px;
+    height: 46px;
+    margin-right: 10px;
 }
 div.box .box-body {
+    padding: 1.2rem;
+    background-color: var(--dark-blue);
     border-radius: 10px;
-    padding: 0 15px;
+    z-index: 1;
 }
 
 .box-body .box-hd {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0;
 }
 .box-hd .title {
     font-weight: 600;
@@ -142,6 +150,7 @@ div.box .box-body {
 .box-body .current-time {
     font-size: 2rem;
     font-weight: 600;
+    margin: 0.4rem 0;
 }
 .box-body .previous-time {
     opacity: 60%;
