@@ -43,17 +43,22 @@ div.user-box {
 }
 
 div.user-info {
-    height: 74%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
     border-radius: 10px;
     background-color: var(--blue);
-    padding: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+#img-container {
+    margin-bottom: 1.2rem; 
 }
 
 .user-info img {
     width: 60px;
     height: 60px;
-}
-#report {
 }
 .user-info span {
     font-size: 15px;
@@ -68,6 +73,7 @@ div.user-info {
 div#btns {
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
     padding: 1.5rem;
 }
 
@@ -95,8 +101,8 @@ main .self-care.box {
     grid-area: self-care;
 }
 
-div.box .box-img {
-    border-radius: 10px 10px 0 0;
+.box {
+    
 }
 
 .work.box .box-img {
@@ -121,17 +127,19 @@ div.box .box-img {
 div.box .box-img {
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    max-height: 40px;
+    border-radius: 10px 10px 0 0;
 }
 div.box .box-img img {
-    width: 46px;
-    height: 46px;
+    width: 48px;
+    height: 48px;
     margin-right: 10px;
 }
 div.box .box-body {
     padding: 1.2rem;
     background-color: var(--dark-blue);
     border-radius: 10px;
-    z-index: 1;
 }
 
 .box-body .box-hd {
@@ -164,4 +172,7 @@ div.box .box-body {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 768px) {
 }
