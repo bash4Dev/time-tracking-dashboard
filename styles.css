@@ -29,15 +29,20 @@ body {
 
 main#container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "user-box work play study"
-    "user-box exercise social self-care";
+    grid-template-columns: 1fr 3fr;
     gap: 1rem;
     width: 58%;
 }
 
+#boxes-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "work play study"
+    "exercise social self-care";
+    gap: 1rem;
+}
+
 div.user-box {
-    grid-area: user-box;
     border-radius: 10px;
     background-color: var(--dark-blue);
 }
@@ -70,7 +75,7 @@ div.user-info {
     line-height: 2rem;
 }
 
-div#btns {
+div#btns-container {
     display: flex;
     flex-direction: column;
     gap: 0.3rem;
@@ -80,6 +85,10 @@ div#btns {
 .btn {
     opacity: 70%;
     cursor: default;
+}
+
+.active {
+    color: #fff;
 }
 
 main .work.box {
