@@ -3,7 +3,7 @@
     --dark-blue: #1c1f4a;
     --very-dark-blue: #0f1424;
     --pale-blue: #bdc1ff;
-    --desaturated-blue: #6f76c8;
+    --desaturated-blue: #242668;
     --lightred: #ff8c66;
     --soft-blue: #56c2e6;
     --light-red: #ff5c7c;
@@ -78,13 +78,17 @@ div.user-info {
 div#btns-container {
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    padding: 1.5rem;
+    gap: 0.7rem;
+    padding: 1rem 1.5rem 0 1.5rem;
 }
 
 .btn {
-    opacity: 70%;
-    cursor: default;
+    opacity: 66%;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 100%;
 }
 
 .active {
@@ -110,10 +114,6 @@ main .self-care.box {
     grid-area: self-care;
 }
 
-.box {
-    
-}
-
 .work.box .box-img {
     background-color: var(--lightred);
 }
@@ -137,41 +137,57 @@ div.box .box-img {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    max-height: 40px;
     border-radius: 10px 10px 0 0;
 }
 div.box .box-img img {
-    width: 48px;
-    height: 48px;
-    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+    position: relative;
+    top: -0.4rem;
 }
 div.box .box-body {
     padding: 1.2rem;
+    padding-bottom: 0.2rem;
     background-color: var(--dark-blue);
     border-radius: 10px;
+    cursor: pointer;
+    height: 86%;
+    position: relative;
+    top: -1rem;
+    z-index: 2;
+}
+div.box .box-body:hover {
+    background-color: var(--desaturated-blue);
 }
 
 .box-body .box-hd {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 .box-hd .title {
-    font-weight: 600;
+    font-weight: 100;
     font-size: 18px;
 } 
 .box-hd img {
     width: 18px;
+    cursor: pointer;
+    opacity: 66%;
+}
+.box-hd img:hover {
+    opacity: 100%;
 }
 
 .box-body .current-time {
-    font-size: 2rem;
-    font-weight: 600;
-    margin: 0.4rem 0;
+    font-size: 2.4rem;
+    font-weight: 500;
 }
 .box-body .previous-time {
-    opacity: 60%;
+    opacity: 64%;
     font-size: 0.8rem;
+    margin-top: 0.4rem;
 }
 
 .attribution {
