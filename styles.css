@@ -210,8 +210,8 @@ div.box .box-body:hover {
     }
 
     div.user-info {
-        height: 60%;
-        padding: 0 1rem;
+        height: 70%;
+        padding: 0 1.2rem;
     }
 
     #img-container {
@@ -232,11 +232,23 @@ div.box .box-body:hover {
     
     div#btns-container {
         gap: 0.5rem;
-        padding: 0.6rem 1rem 0 1rem;
+        padding: 0.8rem 1.2rem;
     }
 
     div.box .box-body {
         padding: 1rem;
         padding-bottom: 0;
+    }
+
+    .box-hd .title {
+        font-size: 16px;
+    }
+
+    .box-body .current-time {
+        font-size: 2.2rem;
+    }
+    .box-body .previous-time {
+        font-size: 0.6rem;
+        margin-top: 0.3rem;
     }
 }
