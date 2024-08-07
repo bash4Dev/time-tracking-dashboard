@@ -24,6 +24,7 @@ body {
     display: grid;
     place-items: center;
     color: #ffff;
+    font-family: "Rubik", sans-serif;
     background-color: var(--very-dark-blue);
 }
 
@@ -66,12 +67,12 @@ div.user-info {
     height: 60px;
 }
 .user-info span {
-    font-size: 15px;
-    opacity: 60%;
+    font-size: 13px;
+   opacity: 60%;
 }
 .user-info #user-title {
+    font-weight: 100;
     font-size: 30px;
-    font-weight: 500;
     line-height: 2rem;
 }
 
@@ -84,16 +85,15 @@ div#btns-container {
 
 .btn {
     opacity: 66%;
+    font-size: 14px;
     cursor: pointer;
 }
-
 .btn:hover {
     opacity: 100%;
 }
-
 .active {
-    color: #fff;
-}
+    opacity: 100%;
+  }
 
 main .work.box {
     grid-area: work;
@@ -138,6 +138,8 @@ div.box .box-img {
     justify-content: flex-end;
     align-items: center;
     border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    position: relative;
 }
 div.box .box-img img {
     width: 40px;
@@ -168,8 +170,8 @@ div.box .box-body:hover {
     margin-bottom: 1.5rem;
 }
 .box-hd .title {
+    font-size: 16px;
     font-weight: 100;
-    font-size: 18px;
 } 
 .box-hd img {
     width: 18px;
@@ -181,12 +183,13 @@ div.box .box-body:hover {
 }
 
 .box-body .current-time {
-    font-size: 2.4rem;
-    font-weight: 500;
+    font-size: 2.3rem;
+    font-weight: 100;
 }
 .box-body .previous-time {
     opacity: 64%;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: 100;
     margin-top: 0.4rem;
 }
 
@@ -202,7 +205,7 @@ div.box .box-body:hover {
 @media (max-width: 768px) {
     main#container {
         gap: 0.8rem;
-        width: 80%;
+        width: 85%;
     }
 
     #boxes-container {
@@ -227,6 +230,7 @@ div.box .box-body:hover {
     }
     .user-info #user-title {
         font-size: 25px;
+        font-weight: 100;
         line-height: 1.6rem;
     }
     
@@ -242,13 +246,16 @@ div.box .box-body:hover {
 
     .box-hd .title {
         font-size: 16px;
+        font-weight: 100;
     }
 
     .box-body .current-time {
         font-size: 2.2rem;
+        font-weight: 100;
     }
     .box-body .previous-time {
         font-size: 0.6rem;
+        font-weight: 100;
         margin-top: 0.3rem;
     }
 }
@@ -295,7 +302,8 @@ div.box .box-body:hover {
         font-size: 13px;
     }
     .user-info #user-title {
-        font-size: 23px;
+        font-size: 20px;
+        font-weight: 100;
         line-height: 1.2rem;
     }
     
@@ -305,6 +313,9 @@ div.box .box-body:hover {
         justify-content: space-between;
         align-items: center;
         padding: 1rem;
+    }
+    .btn {
+        font-size: 14px;
     }
 
     div.box .box-body {
@@ -322,12 +333,15 @@ div.box .box-body:hover {
 
     .box-hd .title {
         font-size: 16px;
+        font-weight: 100;
     }
 
     .box-body .current-time {
         font-size: 2rem;
+        font-weight: 100;
     }
     .box-body .previous-time {
         font-size: 0.8rem;
+        font-weight: 100;
     }
 }
