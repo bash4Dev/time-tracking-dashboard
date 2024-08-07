@@ -57,27 +57,27 @@ function updateStats(stats) {
   }
 }
 
-function activeBtn(buttonId) {
-  const buttons = document.querySelectorAll('#btns-container .btn');
-  buttons.forEach(button => {
-    button.classList.remove('active');
+function activeBtn(btnId) {
+  const btns = document.querySelectorAll('#btns-container .btn');
+  btns.forEach(btn => {
+    btn.classList.remove('active');
   });
-  document.getElementById(buttonId).classList.add('active');
+  document.getElementById(btnId).classList.add('active');
 }
 
 const showDailyStats = () => {
   updateStats(dailyReport);
-  activeBtn(dailyBtn);
+  activeBtn('daily-btn');
 };
 
 const showWeeklyStats = () => {
   updateStats(weeklyReport);
-  activeBtn(weeklyBtn);
+  activeBtn('weekly-btn');
 };
 
 const showMonthlyStats = () => { 
   updateStats(monthlyReport);
-  activeBtn(monthlyBtn);
+  activeBtn('monthly-btn');
 };
 
 dailyBtn.addEventListener('click', showDailyStats);
