@@ -178,7 +178,7 @@ div.box .box-body:hover {
     cursor: pointer;
     opacity: 66%;
 }
-.box-hd img:hover {
+.box-hd img:active {
     opacity: 100%;
 }
 
